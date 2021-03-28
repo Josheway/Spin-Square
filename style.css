@@ -25,9 +25,9 @@ body {
     height: 100px;
     position: relative;
     margin: auto;
-    /* top: 100px; */
     transition-property: transform;
     transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     /* padding: 20px; */
 }
 
@@ -36,25 +36,24 @@ transform: rotateZ(360deg);
 }
 
 .anotherbox {
-    /* background: white; */
     border-style: solid;
     border-color: rgb(82, 18, 134);
     width: 100px;
     height: 100px;
     position: relative;
     margin: auto;
-    /* padding: 20px; */
-    /* top: 30px; */
+    animation: rotate 3000ms infinite linear;
+    /* does the same thing as above
     animation-name: rotate;
-    animation-duration: 2s;
+    animation-duration: 1500ms;
     animation-iteration-count: infinite;
-    /* animation-fill-mode: forwards; */
-    /* animation-delay: 2s; */
-  animation-direction: alternate;
-  /* animation-timing-function: ease-in-out; */
+    animation-timing-function: linear; */
+
+  /* animation-direction: alternate; */
+  
 }
 
 @keyframes rotate {
     0%   {transform: rotatez(0deg)}
-  100% {transform: rotatez(360deg)}
+  100% {transform: rotatez(359deg)}
 }
