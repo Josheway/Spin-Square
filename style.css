@@ -57,3 +57,13 @@ transform: rotateZ(360deg);
     0%   {transform: rotatez(0deg)}
   100% {transform: rotatez(359deg)}
 }
+
+.slider {
+    appearance: none;
+    width: 150px;
+    height: 10px;
+    position: relative;
+    margin: auto;
+    top: 20px;
+    
+}
