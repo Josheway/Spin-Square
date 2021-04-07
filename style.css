@@ -42,7 +42,7 @@ transform: rotateZ(360deg);
     height: 100px;
     position: relative;
     margin: auto;
-    animation: rotate 3000ms infinite linear;
+    animation: rotate 4s infinite linear;
     /* does the same thing as above
     animation-name: rotate;
     animation-duration: 1500ms;
